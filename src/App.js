@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import NavbarUI from "./components/Navbar";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import Map from "./components/Map";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Offcampus from "./components/offcampus";
+import CreateJob from "./components/CreateJob";
+import AdminLogin from "./components/AdminLogin";
+import AboutUs from "./components/AboutUs";
 
 function App() {
+  const [companies, setCompanies] = useState("");
+  const [type, setType] = useState("Job");
+  const [urls, setUrls] = useState([]);
+  const [Data, setData] = useState([]);
+  async function getData() {
+    const res = await axios.get("http://localhost:4000/api/jobs/");
+    setData(res.data);
+  }
+  useEffect(() => {
+    getData();
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavbarUI />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/oncampus" element={<Map Data={Data} />} />
+          <Route path="/offcampus" element={<Offcampus />} />
+          <Route path="/add" element={<AdminLogin />} />
+          <Route path="/about" element={<AboutUs />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

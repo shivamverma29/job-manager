@@ -1,0 +1,56 @@
+/* YourComponent.css */
+
+.custom-navbar {
+  /* background-color: #333;  */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: transparent;
+}
+.jsx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-left: 433px;
+}
+
+.custom-logo {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #000; /* Logo text color */
+}
+
+.custom-nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+
+.custom-nav-links li {
+  text-decoration: none;
+  margin: 0;
+}
+
+.custom-nav-links a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #000; /* Navbar link text color */
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.custom-nav-links a:hover {
+  text-decoration: dotted;
+  color: rgb(0, 247, 255); /* Navbar link text color on hover */
+}
+.routehome {
+  text-decoration: none;
+  color: black;
+}
