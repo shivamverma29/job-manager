@@ -45,17 +45,15 @@
   padding: 10px 20px;
   font-size: 1.2em;
   text-align: center;
-  text-decoration: none;
-  background-color: #3498db; /* Button background color */
-  color: #fff; /* Button text color */
+  cursor: pointer;
+  color: white;
+  border: none;
   border-radius: 5px;
+  text-decoration: none;
+  background: #839393;
   transition: background-color 0.3s, color 0.3s;
 }
 
-.job-button:hover {
-  background-color: #2980b9; /* Button background color on hover */
-  color: #fff; /* Button text color on hover */
-}
 .text2 {
   font-size: 1.2em;
   line-height: 1.5;

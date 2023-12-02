@@ -45,12 +45,12 @@ a {
   font-weight: 600;
   transition: color 0.3s;
 }
-
 .custom-nav-links a:hover {
-  text-decoration: dotted;
-  color: rgb(0, 247, 255); /* Navbar link text color on hover */
+  /* display: none; */
+  color: rgb(81, 106, 107); /* Navbar link text color on hover */
+  border-bottom: 2px solid rgb(81, 106, 107);
 }
 .routehome {
-  text-decoration: none;
+  text-decoration: none !important;
   color: black;
 }

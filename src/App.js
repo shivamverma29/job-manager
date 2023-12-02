@@ -23,8 +23,8 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <NavbarUI />
       <BrowserRouter>
+        <NavbarUI />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/oncampus" element={<Map Data={Data} />} />

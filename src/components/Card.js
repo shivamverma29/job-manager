@@ -20,7 +20,11 @@ function Cards(data) {
               addSuffix: "true",
             })}
           </p>
-          <a href={data["url"]} target="_blank" className="apply-button">
+          <a
+            href={"https://" + data["url"]}
+            target="_blank"
+            className="apply-button"
+          >
             Apply now
           </a>
         </div>

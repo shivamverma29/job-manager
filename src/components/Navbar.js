@@ -1,21 +1,22 @@
 import React from "react";
 import "../style/navbar.css";
+import { Link } from "react-router-dom";
 
 const NavbarUI = () => {
   return (
     <nav className="custom-navbar">
       <div className="custom-logo">
-        <a className="routehome" href="/w">
-          Jobify
+        <a className="routehome" href="/">
+          Job Manager
         </a>
       </div>
       <div className="jsx">
         <ul className="custom-nav-links">
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="about">About</a>
+            <Link to="about">About</Link>
           </li>
           <li>
             <a href="oncampus">OnCampus</a>
