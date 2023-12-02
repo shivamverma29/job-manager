@@ -2,7 +2,6 @@ import "../style/cards.css";
 
 function Card2(dataoff) {
   dataoff = dataoff["item"];
-  console.log(dataoff[0]);
   return (
     <div className="card-container">
       <h2 className="card-header">{dataoff[0]}</h2>

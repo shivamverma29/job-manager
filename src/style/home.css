@@ -22,23 +22,13 @@
   display: flex !important;
   flex-direction: row !important;
 }
-/* YourComponent.css */
 
 .text {
   margin: 0;
   text-align: center;
   font-size: 3em;
-  color: #333; /* Set the text color for light background */
-  background: linear-gradient(
-    to right,
-    #3498db,
-    #e74c3c
-  ); /* Adjust gradient colors */
-  -webkit-background-clip: text;
-  background-clip: text;
-  filter: drop-shadow(
-    2px 2px 4px rgba(0, 0, 0, 0.3)
-  ); /* Add a drop shadow for better visibility */
+  color: #333;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
 }
 .job-button {
   display: inline-block;
@@ -51,13 +41,12 @@
   border-radius: 5px;
   text-decoration: none;
   background: #839393;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .text2 {
   font-size: 1.2em;
   line-height: 1.5;
-  color: #333; /* Text color */
+  color: #333;
   text-align: center;
   margin: 20px 0;
 }

@@ -1,12 +1,7 @@
 import "../style/cards.css";
 import formatDistanceToNow from "date-fns/formatDistanceToNow";
 function Cards(data) {
-  // props = props[0];
-  // console.log(data.data[0]["company"]);
-  // data = data[0];
   data = data["product"];
-  // console.log(data);
-  // data = product[Data]
   return (
     <div className="card-container">
       <div>
